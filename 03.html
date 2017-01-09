@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1, user-scalable=no">
+	<title>轻出国管培生</title>
+	<style>
+		* {
+			margin: 0px;
+			border: 0px;
+			padding: 0px;
+		}
+		
+		body {
+			text-align: center;
+		}
+		
+		html,
+		body {
+			height: 100%;
+		}
+		
+		.div1 {
+			height: 100%;
+			position: relative;
+			float: left;
+			left: 50%;
+		}
+		
+		.div1 img {
+			height: 100%;
+			position: relative;
+			left: -50%;
+			display: block;
+		}
+		
+		.mydiv {
+			font-size: 14px;
+			z-index: 999;
+			width: 210px;
+			height:20px;
+			left: -15%;
+			top: 45%;
+			margin-top: 0px;
+			position: absolute;
+			display: block;
+			float: left;
+			/*IE6*/
+			margin: 0 auto;
+			background-color: transparent;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+			-ms-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+		}
+		#nameDiv {
+			left: 0%;
+			top: 24%;
+		}
+		#nameDiv span{
+			background-color: transparent;
+			height: 30px;
+			width: 210px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<div class="div1">
+		<img id="tpy3" src="img/tpy03.jpg" usemap="#qcg03">
+		<map name="qcg03">
+		   <area id="area1" shape="rect"  href="02222.html" alt="活动规则" />
+ 		   <area id="area2" shape="rect"  href="02222.html" alt="去邀请" />
+		</map>
+		<div id="nameDiv" class="mydiv" style="">
+			<span>张三</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload = function() {
+		var img = document.getElementById("tpy3");
+		var widthStr = img.width;
+		var heightStr = img.height;
+		
+		var map1 = document.getElementById("area1");
+		var map1X1 = parseInt(0.7813 * widthStr);
+		var map1Y1 = parseInt(0.494 * heightStr);
+		var map1X2 = parseInt(widthStr);
+		var map1Y2 = parseInt(0.5435 * heightStr);
+		var map1Coords=map1X1+","+map1Y1+","+map1X2+","+map1Y2;
+		map1.coords=map1Coords;
+		
+		var map2 = document.getElementById("area2");
+		var map2X1 = parseInt(0.356 * widthStr);
+		var map2Y1 = parseInt(0.904 * heightStr);
+		var map2X2 = parseInt(0.6827 * widthStr);
+		var map2Y2 = parseInt(0.9685 * heightStr);
+		var map2Coords=map2X1+","+map2Y1+","+map2X2+","+map2Y2;
+		map2.coords=map2Coords;
+		
+	}
+</script>
+</html>

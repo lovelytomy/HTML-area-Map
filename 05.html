@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1, user-scalable=no">
+	<title>轻出国管培生</title>
+	<style>
+		* {
+			margin: 0px;
+			border: 0px;
+			padding: 0px;
+		}
+		
+		body {
+			text-align: center;
+		}
+		
+		html,
+		body {
+			height: 100%;
+		}
+		
+		.div1 {
+			height: 100%;
+			position: relative;
+			float: left;
+			left: 50%;
+		}
+		
+		.div1 img {
+			height: 100%;
+			position: relative;
+			left: -50%;
+			display: block;
+		}
+		
+		.mydiv {
+			font-size: 14px;
+			z-index: 999;
+			width: 210px;
+			height:20px;
+			left: -15%;
+			top: 45%;
+			margin-top: 0px;
+			position: absolute;
+			display: block;
+			float: left;
+			/*IE6*/
+			margin: 0 auto;
+			background-color: transparent;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+			-ms-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+		}
+		#nameDiv {
+			left: 15%;
+			top: 35%;
+		}
+		#nameDiv span{
+			background-color: transparent;
+			height: 30px;
+			width: 210px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<div class="div1">
+		<img id="tpy5" src="img/tpy05.jpg" usemap="#qcg03">
+		<map name="qcg03">
+ 		 <area  id="area1" shape="rect" coords="60,112,143,145" href="02222.html" alt="活动规则" />
+		 <area  id="area2"  shape="rect" coords="200,482,308,522" href="02.html" alt="我要成为特派员" />
+		 <area  id="area3"  shape="rect" coords="208,572,305,602" href="info.htm" alt="啥是轻出国管培生" />
+		</map>
+		<div id="nameDiv" class="mydiv" style="">
+			<span>张三</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload = function() {
+		var img = document.getElementById("tpy5");
+		var widthStr = img.width;
+		var heightStr = img.height;
+		
+		var map1 = document.getElementById("area1");
+		var map1X1 = parseInt(0.1613 * widthStr);
+		var map1Y1 = parseInt(0.1671 * heightStr);
+		var map1X2 = parseInt(0.38 * widthStr);
+		var map1Y2 = parseInt(0.2166 * heightStr);
+		var map1Coords=map1X1+","+map1Y1+","+map1X2+","+map1Y2;
+		map1.coords=map1Coords;
+		
+		var map2 = document.getElementById("area2");
+		var map2X1 = parseInt(0.5333 * widthStr);
+		var map2Y1 = parseInt(0.7219 * heightStr);
+		var map2X2 = parseInt(0.8213 * widthStr);
+		var map2Y2 = parseInt(0.7759 * heightStr);
+		var map2Coords=map2X1+","+map2Y1+","+map2X2+","+map2Y2;
+		map2.coords=map2Coords;
+		
+		var map3 = document.getElementById("area3");
+		var map3X1 = parseInt(0.5547 * widthStr);
+		var map3Y1 = parseInt(0.8575 * heightStr);
+		var map3X2 = parseInt(0.8133 * widthStr);
+		var map3Y2 = parseInt(0.8891 * heightStr);
+		var map3Coords=map3X1+","+map3Y1+","+map3X2+","+map3Y2;
+		map3.coords=map3Coords;
+		
+	}
+</script>
+</html>

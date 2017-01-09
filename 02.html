@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1, user-scalable=no">
+	<title>轻出国管培生</title>
+	<style>
+		* {
+			margin: 0px;
+			border: 0px;
+			padding: 0px;
+		}
+		
+		body {
+			text-align: center;
+		}
+		
+		html,
+		body {
+			height: 100%;
+		}
+		
+		.div1 {
+			height: 100%;
+			position: relative;
+			float: left;
+			left: 50%;
+		}
+		
+		.div1 img {
+			height: 100%;
+			position: relative;
+			left: -50%;
+			display: block;
+		}
+		
+		.mydiv {
+			font-size: 14px;
+			z-index: 999;
+			width: 210px;
+			height: 50px;
+			left: -15%;
+			top: 45%;
+			margin-top: 0px;
+			position: absolute;
+			display: block;
+			float: left;
+			/*IE6*/
+			margin: 0 auto;
+			background-color: transparent;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+			-ms-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+		}
+		
+		#phoneDiv {
+			left: -15%;
+			top: 64%;
+		}
+		#nameDiv {
+			left: -15%;
+			top: 45%;
+		}
+		.mydiv input[type="text"]{
+			background-color: transparent; 
+			height: 50px;width:210px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<div class="div1">
+		<img id="tpy2" src="img/tpy02.jpg" usemap="#qcg02">
+		</img>
+		<map name="qcg02">
+ 		   <area id="area1" shape="rect" href="02222.html" alt="确定" />
+		</map>
+		<div id="nameDiv" class="mydiv">
+			<input type="text" name="firstname" value="Mickey" style="border: solid 1px #FF0000; ">
+		</div>
+		<div id="phoneDiv" class="mydiv">
+			<input type="text" name="phoneName" value="18519858300" style="border: solid 1px #FFFF00;">
+		</div>
+	</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload = function() {
+		var img = document.getElementById("tpy2");
+		var widthStr = img.width;
+		var heightStr = img.height;
+		
+		var map1 = document.getElementById("area1");
+		var map1X1 = parseInt(0.32 * widthStr);
+		var map1Y1 = parseInt(0.8478 * heightStr);
+		var map1X2 = parseInt(0.5867 * widthStr);
+		var map1Y2 = parseInt(0.9235 * heightStr);
+		var map1Coords=map1X1+","+map1Y1+","+map1X2+","+map1Y2;
+		map1.coords=map1Coords;
+	}
+</script>
+</html>
